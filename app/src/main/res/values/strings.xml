@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Dice</string>
+    <string name="mensagem">Joga o Dado</string>
+    <string name="joga_o_dado">Joga o Dado</string>
+</resources>
