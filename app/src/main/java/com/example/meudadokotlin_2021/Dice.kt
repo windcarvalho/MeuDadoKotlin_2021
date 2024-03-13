@@ -14,8 +14,5 @@ data class Dice (val numFaces:Int){
             }
         }
 
-    fun rollDice():Int {
-        this.number = Random.nextInt(this.numFaces)+ 1
-        return this.number
-    }
+
 }

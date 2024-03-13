@@ -19,14 +19,9 @@ class MainActivity : AppCompatActivity() {
         btRoll.setOnClickListener {
 
             val d:Dice = Dice (6)
-            val random= d.rollDice()
+            val random= rollDice()
             val drawableRes = when (random){
                 1 -> R.drawable.dice_1
-                2 -> R.drawable.dice_2
-                3 -> R.drawable.dice_3
-                4 -> R.drawable.dice_4
-                5 -> R.drawable.dice_5
-                6 -> R.drawable.dice_6
                 else -> R.drawable.empty_dice
             }
 
@@ -36,8 +31,8 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-   /* private fun rollDice():Int {
-        var randomNum:Int = Random.nextInt(6)+ 1
+    private fun rollDice():Int {
+        var randomNum:Int = Random.nextInt()+ 1
         return randomNum
-    }*/
+    }
 }
