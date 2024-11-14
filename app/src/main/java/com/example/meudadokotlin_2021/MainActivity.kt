@@ -19,9 +19,10 @@ class MainActivity : AppCompatActivity() {
         btRoll.setOnClickListener {
 
             val d:Dice = Dice (6)
-            val random= rollDice()
+            val random= 2 //rollDice()
             val drawableRes = when (random){
                 1 -> R.drawable.dice_1
+                2 -> R.drawable.dice_2
                 else -> R.drawable.empty_dice
             }
 
